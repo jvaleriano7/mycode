@@ -1,0 +1,5 @@
+git status
+git add /home/student/mycode/*
+git commit -m "Variable files"
+git push origin
+cd 
