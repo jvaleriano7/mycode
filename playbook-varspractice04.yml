@@ -52,7 +52,7 @@
   # Transform the team name into just the location: Florida Panthers into Florida.
   - name: Loop across the team names and write out only the location of the team
     vars:
-      split: "{{ item.fullName.split(' ', 1) }}"
+      split: "{{ item.fullName.split(' ', 0) }}"
     shell: "echo {{ split[0] }} >> /tmp/teamlocations.txt"
     loop: "{{ results.json.data }}"
     tags:
