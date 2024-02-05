@@ -1,4 +1,4 @@
 git status
-git add /home/student/mycode/*
+git add /home/jv/mycode/*
 git commit -m "Variable files"
 git push origin
