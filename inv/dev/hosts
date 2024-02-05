@@ -1,12 +1,12 @@
 [planetexpress]
 one         ansible_host=192.168.1.201 ansible_user=jv ansible_python_interpreter=/usr/bin/python3 fileuser=jv
 two         ansible_host=192.168.1.202 ansible_user=jv ansible_python_interpreter=/usr/bin/python3 fileuser=jv
-three       ansible_host=192.168.1.195 ansible_user=jv ansible_python_interpreter=/usr/bin/python3 fileuser=three
+three       ansible_host=192.168.1.195 ansible_user=jv ansible_python_interpreter=/usr/bin/python3 fileuser=jv
 raspi       ansible_host=192.168.1.208 ansible_user=root ansible_ssh_pass=Rocks77p! fileuser=root
 
 [research]
 h1    ansible_host=192.168.1.195 ansible_user=jv ansible_python_interpreter=/usr/bin/python3
-h2    ansible_host=192.168.1.202 ansible_user=jv      ansible_python_interpreter=/usr/bin/python3
+h2    ansible_host=192.168.1.202 ansible_user=jv ansible_python_interpreter=/usr/bin/python3
 
 [raiders]
 raspi      ansible_host=192.168.1.208 ansible_user=root ansible_ssh_pass=Rocks77p!
