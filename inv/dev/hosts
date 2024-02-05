@@ -1,22 +1,23 @@
 [planetexpress]
-bender      ansible_host=10.10.2.3 ansible_user=bender ansible_python_interpreter=/usr/bin/python3 fileuser=bender
-fry         ansible_host=10.10.2.4 ansible_user=fry ansible_python_interpreter=/usr/bin/python3 fileuser=fry
-zoidberg    ansible_host=10.10.2.5 ansible_user=zoidberg ansible_python_interpreter=/usr/bin/python3 fileuser=zoidberg
-farnsworth  ansible_host=10.10.2.6 ansible_user=farnsworth ansible_ssh_pass=alta3 fileuser=farnsworth
+one         ansible_host=192.168.1.201 ansible_user=jv ansible_python_interpreter=/usr/bin/python3 fileuser=jv
+two         ansible_host=192.168.1.202 ansible_user=jv ansible_python_interpreter=/usr/bin/python3 fileuser=jv
+three       ansible_host=192.168.1.195 ansible_user=jv ansible_python_interpreter=/usr/bin/python3 fileuser=three
+raspi       ansible_host=192.168.1.208 ansible_user=root ansible_ssh_pass=Rocks77p! fileuser=root
 
 [research]
-h1    ansible_host=10.10.2.5 ansible_user=zoidberg ansible_python_interpreter=/usr/bin/python3
-h2    ansible_host=10.10.2.4 ansible_user=fry      ansible_python_interpreter=/usr/bin/python3
+h1    ansible_host=192.168.1.195 ansible_user=jv ansible_python_interpreter=/usr/bin/python3
+h2    ansible_host=192.168.1.202 ansible_user=jv      ansible_python_interpreter=/usr/bin/python3
 
 [raiders]
-indy      ansible_host=10.10.2.2 ansible_user=indy ansible_ssh_pass=alta3
+raspi      ansible_host=192.168.1.208 ansible_user=root ansible_ssh_pass=Rocks77p!
 
 [professors]
-farnsworth  ansible_host=10.10.2.6 ansible_user=farnsworth
+raspi  ansible_host=192.168.1.208 ansible_user=root
 
 [web]
-bender      ansible_host=10.10.2.3 ansible_user=bender ansible_python_interpreter=/usr/bin/python3
-fry         ansible_host=10.10.2.4 ansible_user=fry ansible_python_interpreter=/usr/bin/python3
+one         ansible_host=192.168.1.201 ansible_user=jv ansible_python_interpreter=/usr/bin/python3
+two         ansible_host=192.168.1.202 ansible_user=jv ansible_python_interpreter=/usr/bin/python3
+three       ansible_host=192.168.1.195 ansible_user=jv ansible_python_interpreter=/usr/bin/python3 
 
 [switches]
 sw-1
@@ -27,4 +28,3 @@ sw-1
 sw-2
 
 [eosswitches:vars]
-ansible_network_os=eos
